@@ -4,7 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
@@ -24,17 +26,47 @@ class MainActivity : ComponentActivity() {
         setContent {
             SimpleTagsTheme {
                 Column{
-                    SimpleTags(
-                        trailingIcon = {
-                           Icon(painterResource(id = R.drawable.github), null)
-                        },
-                        tagText = "Github",
-                        modifier = Modifier
-                            .padding(top = 26.dp),
-                        onClick = {
+                    Row{
+                        SimpleTags(
+                            trailingIcon = {
+                                Icon(painterResource(id = R.drawable.github), null)
+                            },
+                            tagText = "Github",
+                            modifier = Modifier
+                                .padding(top = 26.dp),
+                            onClick = {
 
-                        }
-                    )
+                            }
+                        )
+                        SimpleTags(
+                            trailingIcon = {
+                                Icon(painterResource(id = R.drawable.microsoftedge), null)
+                            },
+                            tagText = "Edge",
+                            modifier = Modifier
+                                .padding(top = 26.dp),
+                            onClick = {
+
+                            },
+                            backgroundColor = Color(0xFF0078D7),
+                            iconColor = Color.White,
+                            tagTextColor = Color.White
+                        )
+                        SimpleTags(
+                            leadingIcon = {
+                                Icon(painterResource(id = R.drawable.microsoft), null, modifier = Modifier.size(20.dp))
+                            },
+                            tagText = "Microsoft",
+                            modifier = Modifier
+                                .padding(top = 26.dp),
+                            onClick = {
+
+                            },
+                            backgroundColor = Color(0xFF5E5E5E),
+                            iconColor = Color.White,
+                            tagTextColor = Color.White
+                        )
+                    }
 
                     SimpleTags(
                         trailingIcon = {
