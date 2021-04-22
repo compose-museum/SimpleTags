@@ -1,7 +1,7 @@
 # SimpleTags
 Generate a variety of Tags
 
-
+![](demo.png)
 
 ## Step 1. Add the JitPack repository to your build file
 
