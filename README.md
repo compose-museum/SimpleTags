@@ -1,5 +1,6 @@
 # SimpleTags
 ## Create a variety of tags simply and easily
+## Out of the box
 
 ![](demo.png)
 
