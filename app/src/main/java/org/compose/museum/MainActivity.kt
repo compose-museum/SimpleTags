@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
                             Icon(painterResource(id = R.drawable.wechat), null)
                         },
                         iconColor = Color.White,
-                        tagText = "Github",
+                        tagText = "WeChat",
                         modifier = Modifier
                             .padding(top = 26.dp),
                         backgroundColor = Color(0xFF07C160),
