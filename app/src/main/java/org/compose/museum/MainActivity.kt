@@ -36,7 +36,8 @@ class MainActivity : ComponentActivity() {
                                 .padding(top = 26.dp),
                             onClick = {
 
-                            }
+                            },
+                            elevation = 10.dp
                         )
                         SimpleTags(
                             trailingIcon = {
@@ -79,7 +80,8 @@ class MainActivity : ComponentActivity() {
                         backgroundColor = Color(0xFF07C160),
                         onClick = {
 
-                        }
+                        },
+                        elevation = 10.dp
                     )
 
                     SimpleTags(

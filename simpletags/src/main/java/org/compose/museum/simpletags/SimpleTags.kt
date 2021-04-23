@@ -17,12 +17,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 
 @Composable
 fun SimpleTags(
     modifier: Modifier = Modifier,
+    elevation: Dp = 0.dp,
     leadingIcon: @Composable (() -> Unit)? = null,
     trailingIcon: @Composable (() -> Unit)? = null,
     iconColor: Color = MaterialTheme.colors.onSurface,
@@ -34,7 +36,8 @@ fun SimpleTags(
     Surface(
         shape = CircleShape,
         color = backgroundColor,
-        modifier = modifier
+        modifier = modifier,
+        elevation = elevation
     ) {
         Row(
             modifier = Modifier
