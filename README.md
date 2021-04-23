@@ -17,11 +17,11 @@ fun SimpleTags(
     backgroundColor: Color = Color(0xFFE8E8E8),
     onClick:() -> Unit
 )
+```
 
 ## Step 1. Add the JitPack repository to your build file
 
 #### setting.gradle
-```
 allprojects {
   repositories {
     ...
