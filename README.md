@@ -15,6 +15,20 @@ allprojects {
   }
 }
 ```
+``` kotlin
+@Composable
+fun SimpleTags(
+    modifier: Modifier = Modifier,
+    elevation: Dp = 0.dp,
+    leadingIcon: @Composable (() -> Unit)? = null,
+    trailingIcon: @Composable (() -> Unit)? = null,
+    iconColor: Color = MaterialTheme.colors.onSurface,
+    tagText: String,
+    tagTextColor: Color = Color.Black,
+    backgroundColor: Color = Color(0xFFE8E8E8),
+    onClick:() -> Unit
+)
+```
 
 ## Step 2. Add the dependency
 
