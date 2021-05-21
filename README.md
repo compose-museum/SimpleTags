@@ -13,6 +13,11 @@ fun SimpleTags(
     trailingIcon: @Composable (() -> Unit)? = null,
     iconColor: Color = MaterialTheme.colors.onSurface,
     tagText: String,
+    tagTextStyle: TextStyle = TextStyle(
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        letterSpacing = 0.15.sp
+    ),
     tagTextColor: Color = Color.Black,
     backgroundColor: Color = Color(0xFFE8E8E8),
     onClick:() -> Unit
