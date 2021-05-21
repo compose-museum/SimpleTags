@@ -19,6 +19,10 @@ fun SimpleTags(
 )
 ```
 
+## you can copy the code [here](https://github.com/compose-museum/SimpleTags/blob/master/simpletags/src/main/java/org/compose/museum/simpletags/SimpleTags.kt)
+
+## or
+
 ## Step 1. Add the JitPack repository to your build file
 
 #### setting.gradle
