@@ -16,9 +16,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 
 @Composable
@@ -29,10 +31,16 @@ fun SimpleTags(
     trailingIcon: @Composable (() -> Unit)? = null,
     iconColor: Color = MaterialTheme.colors.onSurface,
     tagText: String,
+    tagTextStyle: TextStyle = TextStyle(
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        letterSpacing = 0.15.sp
+    ),
     tagTextColor: Color = Color.Black,
     backgroundColor: Color = Color(0xFFE8E8E8),
     onClick:() -> Unit
 ){
+
     Surface(
         shape = CircleShape,
         color = backgroundColor,
@@ -58,7 +66,7 @@ fun SimpleTags(
                     Text(
                         text = tagText,
                         fontWeight = FontWeight.W700,
-                        style = MaterialTheme.typography.subtitle1,
+                        style = tagTextStyle,
                         color = tagTextColor
                     )
                 }
@@ -66,8 +74,8 @@ fun SimpleTags(
                     Text(
                         text = tagText,
                         fontWeight = FontWeight.W700,
-                        style = MaterialTheme.typography.subtitle1,
-                        color = tagTextColor
+                        style = tagTextStyle,
+                        color = tagTextColor,
                     )
                     Spacer(Modifier.padding(horizontal = 4.dp))
                     CompositionLocalProvider(
@@ -79,7 +87,7 @@ fun SimpleTags(
                     Text(
                         text = tagText,
                         fontWeight = FontWeight.W700,
-                        style = MaterialTheme.typography.subtitle1,
+                        style = tagTextStyle,
                         color = tagTextColor
                     )
                 }

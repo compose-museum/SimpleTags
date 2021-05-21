@@ -15,8 +15,10 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import org.compose.museum.simpletags.SimpleTags
 import org.compose.museum.ui.theme.SimpleTagsTheme
 
@@ -37,7 +39,10 @@ class MainActivity : ComponentActivity() {
                             onClick = {
 
                             },
-                            elevation = 10.dp
+                            elevation = 10.dp,
+                            tagTextStyle = TextStyle(
+                                fontSize = 26.sp
+                            )
                         )
                         SimpleTags(
                             trailingIcon = {
