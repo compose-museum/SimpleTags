@@ -49,12 +49,11 @@ fun SimpleTags(
         ) {
             when(true){
                 leadingIcon != null -> {
-                    CompositionLocalProvider(LocalContentColor provides iconColor) {
-                        CompositionLocalProvider(
-                            LocalContentAlpha provides ContentAlpha.high,
-                            content = leadingIcon
-                        )
-                    }
+                    CompositionLocalProvider(
+                        LocalContentAlpha provides ContentAlpha.high,
+                        LocalContentColor provides iconColor,
+                        content = leadingIcon)
+
                     Spacer(Modifier.padding(horizontal = 4.dp))
                     Text(
                         text = tagText,
@@ -71,12 +70,10 @@ fun SimpleTags(
                         color = tagTextColor
                     )
                     Spacer(Modifier.padding(horizontal = 4.dp))
-                    CompositionLocalProvider(LocalContentColor provides iconColor) {
-                        CompositionLocalProvider(
-                            LocalContentAlpha provides ContentAlpha.high,
-                            content = trailingIcon
-                        )
-                    }
+                    CompositionLocalProvider(
+                        LocalContentAlpha provides ContentAlpha.high,
+                        LocalContentColor provides iconColor,
+                        content = trailingIcon)
                 }
                 else -> {
                     Text(
