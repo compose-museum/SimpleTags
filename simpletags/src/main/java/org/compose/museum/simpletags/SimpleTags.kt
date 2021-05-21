@@ -65,7 +65,6 @@ fun SimpleTags(
                     Spacer(Modifier.padding(horizontal = 4.dp))
                     Text(
                         text = tagText,
-                        fontWeight = FontWeight.W700,
                         style = tagTextStyle,
                         color = tagTextColor
                     )
@@ -73,7 +72,6 @@ fun SimpleTags(
                 trailingIcon != null -> {
                     Text(
                         text = tagText,
-                        fontWeight = FontWeight.W700,
                         style = tagTextStyle,
                         color = tagTextColor,
                     )
@@ -86,7 +84,6 @@ fun SimpleTags(
                 else -> {
                     Text(
                         text = tagText,
-                        fontWeight = FontWeight.W700,
                         style = tagTextStyle,
                         color = tagTextColor
                     )
