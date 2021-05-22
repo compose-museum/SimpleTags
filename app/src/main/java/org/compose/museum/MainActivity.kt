@@ -35,50 +35,47 @@ class MainActivity : ComponentActivity() {
                             trailingIcon = {
                                 Icon(painterResource(id = R.drawable.github), null)
                             },
-                            tagText = "Github",
+                            text = "Github",
                             modifier = Modifier
                                 .padding(top = 26.dp),
                             onClick = {
 
                             },
                             elevation = 10.dp,
-                            tagTextStyle = TextStyle(
+                            textStyle = TextStyle(
                                 fontSize = 26.sp,
-                                fontWeight = FontWeight.W900
+                                fontWeight = FontWeight.W900,
+                                color = Color.White
                             )
                         )
                         SimpleTags(
                             trailingIcon = {
                                 Icon(painterResource(id = R.drawable.microsoftedge), null)
                             },
-                            tagText = "Edge",
+                            text = "Edge",
                             modifier = Modifier
                                 .padding(top = 26.dp),
                             onClick = {
 
                             },
                             backgroundColor = Color(0xFF0078D7),
-                            iconColor = Color.White,
-                            tagTextColor = Color.White
                         )
                         SimpleTags(
                             leadingIcon = {
                                 Icon(painterResource(id = R.drawable.microsoft), null, modifier = Modifier.size(20.dp))
                             },
-                            tagText = "Microsoft",
+                            text = "Microsoft",
                             modifier = Modifier
                                 .padding(top = 26.dp),
                             onClick = {
 
                             },
                             backgroundColor = Color(0xFF5E5E5E),
-                            iconColor = Color.White,
-                            tagTextColor = Color.White
                         )
                     }
 
                     SimpleTags(
-                        tagText = "WeChat",
+                        text = "WeChat",
                         modifier = Modifier
                             .padding(top = 26.dp),
                         backgroundColor = Color(0xFF07C160),
@@ -90,14 +87,12 @@ class MainActivity : ComponentActivity() {
 
                     SimpleTags(
                         leadingIcon = {
-                            Icon(painterResource(id = R.drawable.twitter), null)
+                            Icon(painterResource(id = R.drawable.twitter), null, tint = Color.White)
                         },
-                        iconColor = Color.White,
-                        tagText = "twitter",
+                        text = "twitter",
                         modifier = Modifier
                             .padding(top = 26.dp),
                         backgroundColor = Color(0xFF1DA1F2),
-                        tagTextColor = Color.White,
                         onClick = {
 
                         }

@@ -31,14 +31,12 @@ fun SimpleTags(
     elevation: Dp = 0.dp,
     leadingIcon: @Composable (() -> Unit)? = null,
     trailingIcon: @Composable (() -> Unit)? = null,
-    iconColor: Color = MaterialTheme.colors.onSurface,
-    tagText: String,
-    tagTextStyle: TextStyle = TextStyle(
+    text: String,
+    textStyle: TextStyle = TextStyle(
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         letterSpacing = 0.15.sp
     ),
-    tagTextColor: Color = Color.Black,
     backgroundColor: Color = Color(0xFFE8E8E8),
     onClick:() -> Unit
 ){
@@ -61,33 +59,29 @@ fun SimpleTags(
                 leadingIcon != null -> {
                     CompositionLocalProvider(
                         LocalContentAlpha provides ContentAlpha.high,
-                        LocalContentColor provides iconColor,
                         content = leadingIcon)
 
                     Spacer(Modifier.padding(horizontal = 4.dp))
                     Text(
-                        text = tagText,
-                        style = tagTextStyle,
-                        color = tagTextColor
+                        text = text,
+                        style = textStyle,
                     )
                 }
                 trailingIcon != null -> {
                     Text(
-                        text = tagText,
-                        style = tagTextStyle,
-                        color = tagTextColor,
+                        text = text,
+                        style = textStyle,
                     )
                     Spacer(Modifier.padding(horizontal = 4.dp))
                     CompositionLocalProvider(
                         LocalContentAlpha provides ContentAlpha.high,
-                        LocalContentColor provides iconColor,
-                        content = trailingIcon)
+                        content = trailingIcon
+                    )
                 }
                 else -> {
                     Text(
-                        text = tagText,
-                        style = tagTextStyle,
-                        color = tagTextColor
+                        text = text,
+                        style = textStyle,
                     )
                 }
             }
