@@ -43,6 +43,6 @@ allprojects {
 #### build.gradle
 ```
 dependencies {
-    implementation 'com.github.compose-museum:SimpleTags:1.2.1'
+    implementation 'com.github.compose-museum:SimpleTags:1.2.5'
 }
 ```
