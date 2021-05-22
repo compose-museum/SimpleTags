@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
@@ -77,10 +78,6 @@ class MainActivity : ComponentActivity() {
                     }
 
                     SimpleTags(
-                        trailingIcon = {
-                            Icon(painterResource(id = R.drawable.wechat), null)
-                        },
-                        iconColor = Color.White,
                         tagText = "WeChat",
                         modifier = Modifier
                             .padding(top = 26.dp),

@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
@@ -26,6 +27,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun SimpleTags(
     modifier: Modifier = Modifier,
+    shape: Shape = CircleShape,
     elevation: Dp = 0.dp,
     leadingIcon: @Composable (() -> Unit)? = null,
     trailingIcon: @Composable (() -> Unit)? = null,
@@ -42,7 +44,7 @@ fun SimpleTags(
 ){
 
     Surface(
-        shape = CircleShape,
+        shape = shape,
         color = backgroundColor,
         modifier = modifier,
         elevation = elevation
@@ -55,7 +57,7 @@ fun SimpleTags(
                 .padding(start = 15.dp, end = 15.dp, top = 8.dp, bottom = 8.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
-            when(true){
+            when{
                 leadingIcon != null -> {
                     CompositionLocalProvider(
                         LocalContentAlpha provides ContentAlpha.high,
