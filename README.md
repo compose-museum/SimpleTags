@@ -8,6 +8,7 @@
 @Composable
 fun SimpleTags(
     modifier: Modifier = Modifier,
+    shape: Shape = CircleShape,
     elevation: Dp = 0.dp,
     leadingIcon: @Composable (() -> Unit)? = null,
     trailingIcon: @Composable (() -> Unit)? = null,
