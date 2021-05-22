@@ -2,6 +2,8 @@
 ## Create a variety of tags simply and easily
 ## Out of the box
 
+[![](https://jitpack.io/v/compose-museum/SimpleTags.svg)](https://jitpack.io/#compose-museum/SimpleTags)
+
 ![](demo.png)
 
 ``` kotlin
