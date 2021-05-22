@@ -8,6 +8,7 @@
 @Composable
 fun SimpleTags(
     modifier: Modifier = Modifier,
+    shape: Shape = CircleShape,
     elevation: Dp = 0.dp,
     leadingIcon: @Composable (() -> Unit)? = null,
     trailingIcon: @Composable (() -> Unit)? = null,
@@ -43,6 +44,6 @@ allprojects {
 #### build.gradle
 ```
 dependencies {
-    implementation 'com.github.compose-museum:SimpleTags:1.2.1'
+    implementation 'com.github.compose-museum:SimpleTags:1.2.5'
 }
 ```
