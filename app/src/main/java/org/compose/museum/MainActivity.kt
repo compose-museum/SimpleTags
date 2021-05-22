@@ -29,7 +29,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             SimpleTagsTheme {
-                Column{
+                Column(
+                    modifier = Modifier.padding(15.dp)
+                ){
                     Row{
                         SimpleTags(
                             trailingIcon = {
@@ -43,7 +45,7 @@ class MainActivity : ComponentActivity() {
                             },
                             elevation = 10.dp,
                             textStyle = TextStyle(
-                                fontSize = 26.sp,
+                                fontSize = 16.sp,
                                 fontWeight = FontWeight.W900,
                                 color = Color.White
                             )
@@ -59,6 +61,7 @@ class MainActivity : ComponentActivity() {
 
                             },
                             backgroundColor = Color(0xFF0078D7),
+                            elevation = 10.dp,
                         )
                         SimpleTags(
                             leadingIcon = {
@@ -71,6 +74,7 @@ class MainActivity : ComponentActivity() {
 
                             },
                             backgroundColor = Color(0xFF5E5E5E),
+                            elevation = 10.dp,
                         )
                     }
 
@@ -82,7 +86,14 @@ class MainActivity : ComponentActivity() {
                         onClick = {
 
                         },
-                        elevation = 10.dp
+                        elevation = 10.dp,
+                        textStyle = TextStyle(
+                            color = Color.White,
+                            fontWeight = FontWeight.W900
+                        ),
+                        trailingIcon = {
+                            Icon(painterResource(id = R.drawable.wechat), null, tint = Color.White)
+                        },
                     )
 
                     SimpleTags(
@@ -95,7 +106,8 @@ class MainActivity : ComponentActivity() {
                         backgroundColor = Color(0xFF1DA1F2),
                         onClick = {
 
-                        }
+                        },
+                        elevation = 10.dp
                     )
                 }
             }
