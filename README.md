@@ -4,7 +4,7 @@
 
 [![](https://jitpack.io/v/compose-museum/SimpleTags.svg)](https://jitpack.io/#compose-museum/SimpleTags)
 
-![](demo.png)
+![](img.png)
 
 ``` kotlin
 @Composable

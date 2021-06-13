@@ -3,6 +3,7 @@ package org.compose.museum
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -48,7 +49,8 @@ class MainActivity : ComponentActivity() {
                                 fontSize = 16.sp,
                                 fontWeight = FontWeight.W900,
                                 color = Color.White
-                            )
+                            ),
+                            border = BorderStroke(2.dp, Color(0xFF0079D3))
                         )
                         SimpleTags(
                             trailingIcon = {

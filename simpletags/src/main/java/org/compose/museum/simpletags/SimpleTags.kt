@@ -3,6 +3,7 @@ package org.compose.museum.simpletags
 import android.content.ContentValues.TAG
 import android.graphics.drawable.Icon
 import android.util.Log
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -38,6 +39,7 @@ fun SimpleTags(
         letterSpacing = 0.15.sp
     ),
     backgroundColor: Color = Color(0xFFE8E8E8),
+    border: BorderStroke? = null,
     onClick:() -> Unit
 ){
 
@@ -45,7 +47,8 @@ fun SimpleTags(
         shape = shape,
         color = backgroundColor,
         modifier = modifier,
-        elevation = elevation
+        elevation = elevation,
+        border = border
     ) {
         Row(
             modifier = Modifier
