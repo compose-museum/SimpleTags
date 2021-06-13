@@ -21,6 +21,7 @@ fun SimpleTags(
         letterSpacing = 0.15.sp
     ),
     backgroundColor: Color = Color(0xFFE8E8E8),
+    border: BorderStroke? = null,
     onClick:() -> Unit
 )
 ```
